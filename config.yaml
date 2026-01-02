@@ -1,0 +1,15 @@
+listen: :443
+
+auth:
+  type: http
+  http:
+    url: http://api.ip2.one/auth.php
+
+trafficStats:
+  listen: 127.0.0.1:25413
+  secret: 123456
+
+
+tls:
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
